@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down-menu</title>
+    <style>
+        .navbar{
+            background-color: aqua;
+            padding: 1% 7%;
+            text-align: center;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+            padding: 10px 20px ;
+            cursor: pointer;
+        }
+        .drop-down-container{
+            display: inline;
+            position: relative;
+        }
+        .drop-down-content{
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            background-color: aqua;
+            text-align: left;
+            min-width: 100px;
+            display: none;
+        }
+        .drop-down-content a{
+            display: block;
+        }
+        .drop-down-container:hover .drop-down-content{
+            display: block;
+        }
+         .drop-down-content a:hover{
+            background-color: yellowgreen;
+         }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">totorial</a>
+
+        <div class="drop-down-container">
+            <a href="#">contact-me</a>
+            <div class="drop-down-content">
+                <a href="#">email</a>
+                <a href="#">facebook</a>
+            </div>
+        </div>
+        <a href="#">about-me</a>
+    </div>
+    
+</body>
+</html>

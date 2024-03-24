@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element 2</title>
+    <style>
+        .demo p:nth-child(odd){
+            background: #000;
+            color: white;
+        }
+        .demo:hover{
+            background: #000;
+            color: aliceblue;
+        }
+        p:hover{
+            background: black;
+            color: white;
+        }
+        li:nth-child(even){
+            background: black;
+            color: aquamarine;
+            width: 100px;
+        }
+        .first-letter{
+            color: brown;
+            font-size: 48px;
+            font-style: italic;            
+        }
+        p::first-letter{
+            color: blueviolet;
+            font-size: 4rem;
+        }
+        ::selection{
+            color: aquamarine;
+            background: black;
+        }
+        .demo::before{
+            content: '';
+            width: 300px;
+            height: 30px;
+            background: yellowgreen;
+            display: inline-block; 
+            
+        }
+        .demo::after{
+            content: '';
+            width: 300px;
+            height: 30px;
+            background: yellowgreen;
+            display: inline-block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis nobis suscipit minima rem cupiditate, fugit ducimus ad saepe nemo officia maxime quae consectetur explicabo quia culpa magnam at expedita.</p>
+    <ul>
+        <li> text1</li>
+        <li> text2</li>
+        <li> text3</li>
+        <li> text4</li>
+        <li> text5</li>
+        <li> text6</li>
+    </ul>
+        <p><span class="first-letter">L</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente id nulla iusto unde aspernatur quam autem amet, possimus veniam eos eius dolore ratione nostrum facilis saepe impedit explicabo numquam.</p>
+        <p><span class="first-letter">N</span>Norem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente id nulla iusto unde aspernatur quam autem amet, possimus veniam eos eius dolore ratione nostrum facilis saepe impedit explicabo numquam.</p>
+        <p><span class="first-letter">O</span>Oorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente id nulla iusto unde aspernatur quam autem amet, possimus veniam eos eius dolore ratione nostrum facilis saepe impedit explicabo numquam.</p>
+        <p><span class="first-letter">P</span>Porem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente id nulla iusto unde aspernatur quam autem amet, possimus veniam eos eius dolore ratione nostrum facilis saepe impedit explicabo numquam.</p>
+</body>
+</html>

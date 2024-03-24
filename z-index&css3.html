@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index&css3</title>
+    <style>
+        :root {
+            --primary-color:green;
+            --secondery-color:yellow;
+        }
+       
+    div{
+        height:250px;
+        width:250px;
+    }
+    #div1{
+        background:var(--primary-color);
+        position:absolute;
+        z-index: 2;
+    }
+    #div2{
+        background:var(--secondery-color);
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        z-index: 1;
+    }
+    #div3{
+        background:blue;
+        position: absolute;
+        left: 300px;
+        top: 300px;
+    }
+    @media screen and ( max-width:800px){
+        :root {
+            --primary-color: brown;
+            --secondery-color:black;
+        } 
+    }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

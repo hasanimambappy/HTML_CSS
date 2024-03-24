@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow&tooltip</title>
+    <style>
+        div{
+            height: 100px;
+            width: 500px;
+            
+            background-color: bisque;
+            border: 5px solid red;
+           
+            overflow:auto;
+        }
+        .tooltip .tooltip-text{
+            visibility: hidden;   
+           width: 150px;
+           background-color: violet;
+           color: black;
+           border-radius: 5px;
+           position: absolute;
+           padding: 10px;
+           top: 30px;
+           left: 30px;
+           z-index: 1;
+            }
+            .tooltip:hover .tooltip-text{
+                visibility: visible;
+            }
+    </style>
+</head>
+<body>
+    <a href="#" class="tooltip">
+        facebook
+        <span class="tooltip-text">facebook is a social media</span>
+
+    </a>
+    <br>
+    <br>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque qui delectus odio tempore ad magni tenetur velit, excepturi recusandae quae, in possimus reiciendis eos repudiandae! Soluta quas eius harum ea eveniet minima quis laborum fuga voluptatum vel quo, natus adipisci. Inventore, officia? Optio blanditiis, vitae quae officia dolorem amet aperiam quidem sint rerum facilis sapiente, eveniet fugit reprehenderit necessitatibus pariatur praesentium architecto dicta? Ut, architecto quod! Animi qui doloribus blanditiis ipsa, explicabo quod sunt excepturi ratione reiciendis perspiciatis inventore distinctio eligendi tempore eaque iusto perferendis voluptatum provident. Quisquam nemo eos aliquid nobis, eveniet laborum delectus nesciunt reiciendis aperiam dolorum?
+    </div>
+    
+</body>
+</html>

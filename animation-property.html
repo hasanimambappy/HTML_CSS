@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation property</title>
+    <style>
+        img{
+            max-width: 400px;
+            height: auto;
+            border: 15px  solid black;
+            display: block;
+            margin: 0 auto;
+
+            margin-top: 100px;
+            border-radius: 50%;
+            animation-name: img2;
+
+           
+        }
+        @keyframes img2{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0%;
+            }
+
+        }
+        img:hover{
+            animation-name: img1;
+            animation-duration: 7s;
+            animation-fill-mode: forwards;
+            
+        }
+        @keyframes img1{
+            from{
+                max-width: 400px;
+                border-color: blue;
+            }
+            50%{
+                border-color: green;
+            }
+            to{
+                max-width: 800px;
+                border-color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img1">
+    <img src="2.jpg" alt="">
+    </div>
+    <div class="img2">
+        <img src="3.webp" alt="">
+    </div>
+    
+</body>
+</html>

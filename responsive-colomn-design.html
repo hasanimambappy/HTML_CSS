@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive column design</title>
+    <style>
+        *{
+            box-sizing:border-box ;
+        }
+        .column{
+            float: left;
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+        }
+       @media screen and (max-width:992px){
+        .column{
+            float: left;
+            width: 50%;
+        }
+       }
+       @media screen and (max-width:600px){
+        .column{
+            
+            width: 100%;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>html</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti vero dolor dolore, alias minus tenetur maiores voluptatum error cum unde amet, qui magni in tempore nam, soluta veniam enim aut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, fugiat?</p>
+        </div>
+        <div class="column">
+            <h1>css</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti vero dolor dolore, alias minus tenetur maiores voluptatum error cum unde amet, qui magni in tempore nam, soluta veniam enim aut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, fugiat?</p>
+        </div>
+        <div class="column">
+            <h1>java script</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti vero dolor dolore, alias minus tenetur maiores voluptatum error cum unde amet, qui magni in tempore nam, soluta veniam enim aut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, fugiat?</p>
+        </div>
+        <div class="column">
+            <h1>phyton</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti vero dolor dolore, alias minus tenetur maiores voluptatum error cum unde amet, qui magni in tempore nam, soluta veniam enim aut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, fugiat?</p>
+        </div>
+         
+    </div>
+    
+</body>
+</html>

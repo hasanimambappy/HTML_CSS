@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design using grid view</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-menu{
+            background-color: rgb(11, 28, 28);
+            padding: 10px;
+        }
+        .nav-menu a{
+            color: white;
+            font-size: 20px;
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+        }
+        .main{
+            padding: 10px;
+            text-align: justify;
+            background-color: rgb(123, 123, 228);
+            font-size: 15px;
+            
+        }
+        .aside{
+            background-color: rgb(187, 143, 228);
+            text-align: center;
+            padding: 1% 5%;
+            font-size: 18px;
+        }
+        .footer{
+            background-color: aquamarine;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+
+        }
+            [class*="col-"]{
+                float: left;
+                padding: 10px;
+            }
+
+        .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+           
+            .row::after{
+                content: '';
+                clear: both;
+                
+               
+            }
+            @media screen and (max-width:768px){
+                [class*="col-"]{
+                    width: 100%;
+                }
+                .nav-menu a{
+                    text-align: center;
+                    background-color: aqua;
+                    margin: 10px;
+                    color: black;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>responsive grid view</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">name</a>
+            <a href="#">contact</a>
+            <a href="#">email</a>
+            <a href="#">address</a>
+        </div>
+
+        <div class="main col-7">
+            <h1> i am a programmer </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa id ratione quis assumenda voluptatibus.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam optio recusandae, illo possimus porro quibusdam placeat vero earum rem eos reiciendis velit nulla odio eligendi ea! Repudiandae error vero accusantium incidunt numquam cupiditate corporis explicabo aperiam. Ad nesciunt est quae iure dolorum ullam corporis, sapiente eligendi, quo, sequi eaque maiores quibusdam! Inventore, exercitationem quae tenetur ipsam animi sed voluptates corporis dolore architecto obcaecati eos. Sit culpa vitae voluptates iusto laboriosam, magnam necessitatibus hic, dolores velit enim corrupti voluptas ea esse, nobis consectetur impedit eligendi. Ipsam voluptates, rem dolorem inventore a ducimus excepturi. Tempora a praesentium totam, tempore ipsam cum laudantium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque amet unde quasi cumque ipsam temporibus iusto voluptatum omnis cupiditate. Dolores aperiam ullam pariatur earum! Dolores iste ipsam, veniam alias vitae assumenda voluptatem totam sed ipsa itaque placeat eum maiores explicabo numquam? Facere distinctio quod quae beatae ratione explicabo nesciunt eaque commodi molestias omnis. Accusamus odit, nulla tempora animi iste optio! Nobis harum esse nulla, quisquam atque accusantium reprehenderit voluptas tempora. Nihil iure quia obcaecati. Exercitationem, pariatur minima? Accusamus, laboriosam neque. Odit beatae pariatur, similique perspiciatis aperiam repellat asperiores eaque officia tenetur eveniet ex nesciunt. Possimus veritatis laudantium quam beatae! Enim error ratione est fugit fuga maiores minus vel sequi ullam, excepturi unde totam? Fugit dicta est aspernatur a esse iure eveniet, accusamus suscipit veritatis?</p>
+        </div>
+    </div>
+
+        <div class="aside col-3">
+            <h2>what i like?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit facilis fuga officiis.</p>
+            
+            <h2>what i want?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consectetur adipisci veniam asperiores! Ducimus rem beatae quis labore.</p>
+        
+        </div>
+        <br>
+    <div class="footer col-12">
+        &copy;self study from youtube.
+    </div>
+</body>
+</html>

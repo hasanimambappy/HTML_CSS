@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+  
+  <style>  a.link:hover{
+        color: green;
+        font-size: 30px;
+    }
+    input{
+        padding: 10px;
+        font-size: 20px;
+        width: 150px;
+    }
+    input:hover{
+        background-color: yellow;
+    }
+    table,tr,td{
+        border: 1px solid blue;
+    }
+    td:nth-child(odd){
+        background-color: yellowgreen;
+    }
+    p:hover{
+        color: aquamarine;
+    }
+    p::first-line{
+        color: blue;
+        font-size: 1.5rem;
+        
+    }
+    p::after{
+        content:">";
+        color: chocolate;
+        font-size: 1.5rem;
+        
+    }
+    p::before{
+        content:">";
+        color:blueviolet;
+        font-size: 1.5rem;
+        
+    }
+    </style>
+</head>
+<body>
+    <a class="link" href="#"> text</a>
+    <a href="#"> area</a></br></br>
+    <input type="text" pleaseholder="Enter your name">
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>age</td>
+            <td>id</td>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>111</td>
+            <td>001</td>
+        </tr>
+        <tr>
+            <td>XYZ</td>
+            <td>999</td>
+            <td>002</td>
+        </tr>
+    </table>
+    <br>
+    <p>How would you know if you have the flu or COVID-19? Should you take both 
+        flu vaccine and the COVID-19 vaccine if these are available to you? 
+        How does WHO decide on the composition of the flu vaccine? Dr Sylvie 
+        Briand explains in Science in 5 this week.
+    </p>
+</body>
+</html>
